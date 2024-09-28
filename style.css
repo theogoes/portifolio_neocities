@@ -227,10 +227,41 @@
 .if_content{
 
   width: calc(100% - 10px);
-  height: calc(100% - 25px);
+  height: calc(100% - 30px);
   background-color: white;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  
+  animation: if_content_background infinite 1s;
+  background-image: url(bk_index/1.jpeg);
 }
 
+.d_img{
+  height: 140%;
+}
 
+@keyframes if_content_background {
+  0%{
+    background-image: url(bk_index/1.jpeg);
+  }
+  20%{
+    background-image: url(bk_index/2.jpeg);
+  }
+  40%{
+    background-image: url(bk_index/3.jpeg);
+  }
+  60%{
+    background-image: url(bk_index/4.jpeg);
+  }
+  80%{
+    background-image: url(bk_index/5.jpeg);
+  }
+  90%{
+    background-image: url(bk_index/6.jpeg);
+  }
+
+}
